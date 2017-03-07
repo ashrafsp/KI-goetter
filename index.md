@@ -96,12 +96,7 @@ Das Haar-cascade kann schließlich eine eigenständige Objekterkennung durchfüh
 <h3>
 <a id="authors-and-contributors" class="anchor" href="#authors-and-contributors" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Ergebnisse:</h3>
 
-<p>Datenbank ist nahezu vollständig</p>
-<p>"einfache" Filter laufen</p>
-<p>aufwenidigere befinden sich in der Testphase</p>
-<p>einlesen von Stauen optimieren</p>
-<p>OpenCV Anwendungen hinzufügen
-</p>
+
 <h3>
 <a id="authors-and-contributors" class="anchor" href="#authors-and-contributors" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Programmfähigkeiten</h3>
 <p>Erkennung von Statuen</p>
