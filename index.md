@@ -92,9 +92,16 @@ Das Haar-cascade kann schließlich eine eigenständige Objekterkennung durchfüh
 <p>Einordnung in den kunsthistorischen Kontext</p>
 <p>Differenzierung von dargestellten Gottheiten</p>
 
-
 <h3>
 <a id="authors-and-contributors" class="anchor" href="#authors-and-contributors" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Ergebnisse:</h3>
+<p>Die Erkennung von Statuen der Archaik mit Hilfe des Archaik-Classifiers funktioniert relativ zuverlässig. Ebenso zuverlässig funktioniert auch die Erkennung von Statuen der Klassik mit Hilfe des Klassik-Classifiers. Lässt man beide Classifier die jeweils andere Epoche analysieren, offenbart sich, dass die Classifier positiv anschlagen, obwohl sie es eigentlich nicht sollen. Der Hellenismus-Classifier scheitert so lange beim Erkennen einer Hellenismus-Statue, bis die Parameter soweit “aufgeweicht” werden, dass er auch kleinere Bildelemente als Treffer ausgibt. Leider führt dieses dann aber dazu, dass er unter Umständen auch Treffer in den Bildern von Klassik und Archaik Statuen anzeigt. 
+
+
+<p>Probleme 
+Die Natur von Classifiern, die detaillierte, nicht-homogene Natur der Statuen und das herunterskalieren der Bilder in eine kleinstmöglichste Auflösung führen zu einem reduzierten Ergebnis. Die Ähnlichkeit von Archaik und Klassik Statuen führt dazu, dass die jeweiligen Classifier oft nicht zwischen den zwei Epochen unterscheiden können. Während die Statuen dieser Epochen untereinander zumindest die Körperhaltung mehr oder weniger gemein haben, ist das bei den Statuen der Hellenistik ein größeres Problem: Hier hat beinahe jede Statue eine andere Körperhaltung, was dazu führt, dass der Classifier Mühe hat, genügend Eigenschaften zu finden, die auf alle Bilder der Epoche zutreffen. 
+Zudem war das Trainieren der Classifier sehr zeitaufwendig. Der Vorgang wurde mehrmals abgebrochen und musste in der Genauigkeit reduziert werden,  damit das Weiterarbeiten mit fertiggestellten Daten möglich war.e</p>
+
+
 
 
 <h3>
@@ -119,7 +126,7 @@ Das Haar-cascade kann schließlich eine eigenständige Objekterkennung durchfüh
 <h3>
 
 <h3>
-<a id="authors-and-contributors" class="anchor" href="#authors-and-contributors" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Ergebnis:</h3>
+<a id="authors-and-contributors" class="anchor" href="#authors-and-contributors" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Vorgehensweise:</h3>
 <p>1.Erkennung von Skulpturen</p>
 <p>Statuen unterteilt in Oberkoerper (UpperBodyDetector.java), Unterkörper (LowerBodyDetector.java) und Gesicht (FaceDetector.java)</p>
 <p>Unterscheidung zwischen Farbton (ColorDetector.java)</p>
@@ -131,6 +138,9 @@ Das Haar-cascade kann schließlich eine eigenständige Objekterkennung durchfüh
 <p>Vereinheitlichung in ein Format </p>
 <p>Umwandlung in Graustufen für weniger Farbkanäle</p>
 </h3>
+
+
+
 
 
 <h3>
